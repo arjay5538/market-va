@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ava Rivera • Social Media Strategist &amp; Content Creation VA</title>
+  <meta name="description" content="Strategic social media management and scroll-stopping content creation for founders, creators, and purpose-driven brands.">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  
+  <style>
+    /* Tailwind script configuration for nice defaults */
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </style>
+</head>
+<body class="bg-[#0F172A] text-white antialiased selection:bg-violet-500/30">
+
+  <!-- ============================================
+       NAVIGATION
+  ============================================ -->
+  <nav id="nav" class="nav fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#0F172A]/80">
+    <div class="max-w-screen-2xl mx-auto px-8 flex items-center justify-between h-20">
+      <!-- Logo -->
+      <div class="flex items-center gap-x-3">
+        <div class="w-9 h-9 rounded-2xl bg-gradient-to-br from-violet-600 to-pink-500 flex items-center justify-center">
+          <span class="font-bold text-white text-2xl tracking-tighter">AR</span>
+        </div>
+        <div>
+          <div class="font-semibold tracking-tighter text-xl">Ava Rivera</div>
+          <div class="text-[10px] text-white/50 -mt-1">SOCIAL • CONTENT</div>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-x-10 text-sm font-medium">
+        <a href="#about" class="nav-link text-white/80 hover:text-white">About</a>
+        <a href="#services" class="nav-link text-white/80 hover:text-white">Services</a>
+        <a href="#work" class="nav-link text-white/80 hover:text-white">Work</a>
+        <a href="#tools" class="nav-link text-white/80 hover:text-white">Tools</a>
+        <a href="#testimonials" class="nav-link text-white/80 hover:text-white">Stories</a>
+      </div>
+
+      <div class="flex items-center gap-x-3">
+        <!-- CTA Button -->
+        <a href="#contact" 
+           class="hidden md:inline-flex btn btn-primary text-sm px-6 py-2.5">
+          Book a Call
+        </a>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" 
+                class="md:hidden w-11 h-11 flex items-center justify-center text-white/70 hover:text-white transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-[#0F172A]">
+      <div class="px-8 py-8 flex flex-col gap-y-6 text-lg font-medium">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#tools" class="nav-link">Tools</a>
+        <a href="#testimonials" class="nav-link">Client Stories</a>
+        
+        <div class="pt-4 border-t border-white/10">
+          <a href="#contact" class="btn btn-primary w-full justify-center">Book Discovery Call</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO
+  ============================================ -->
+  <header class="hero pt-20">
+    <div class="max-w-screen-2xl mx-auto px-8 grid md:grid-cols-12 gap-x-8 items-center min-h-[calc(100dvh-5rem)]">
+      
+      <!-- Left Content -->
+      <div class="md:col-span-7 lg:col-span-7 xl:pr-12">
+        <div class="max-w-3xl">
+          <!-- Badge -->
+          <div id="hero-badge"
+               class="hero-badge mb-8 inline-flex items-center gap-2 text-sm font-medium">
+            ✨ Currently accepting new clients for Q3 2026
+          </div>
+          
+          <h1 id="hero-title"
+              class="hero-title text-balance leading-none tracking-tighter mb-6">
+            I craft <span class="accent">magnetic social media</span><br> presences and scroll-stopping content.
+          </h1>
+          
+          <p id="hero-subtitle"
+             class="max-w-lg text-2xl text-white/80 tracking-tight mb-10">
+            Helping founders, creators &amp; purpose-driven brands build communities that actually convert.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <button id="cta-primary"
+                    class="btn btn-primary text-base px-9 py-4 w-full sm:w-auto">
+              Explore My Work
+            </button>
+            
+            <button id="cta-secondary"
+                    class="btn btn-secondary text-base px-8 py-4 w-full sm:w-auto group">
+              <span>Book a Discovery Call</span>
+              <span class="inline-block transition group-hover:translate-x-1">→</span>
+            </button>
+          </div>
+          
+          <div class="mt-8 flex items-center gap-x-6 text-sm text-white/60">
+            <div class="flex -space-x-2">
+              <img src="https://i.pravatar.cc/24?img=28" class="w-6 h-6 rounded-full ring-2 ring-[#0F172A]" alt="">
+              <img src="https://i.pravatar.cc/24?img=47" class="w-6 h-6 rounded-full ring-2 ring-[#0F172A]" alt="">
+              <img src="https://i.pravatar.cc/24?img=32" class="w-6 h-6 rounded-full ring-2 ring-[#0F172A]" alt="">
+            </div>
+            <div>Trusted by <span class="font-medium text-white/80">50+</span> founders &amp; creators</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Visual -->
+      <div class="hidden md:block md:col-span-5 lg:col-span-5 relative mt-12 md:mt-0">
+        <div class="relative">
+          <img src="assets/profile.jpg" 
+               alt="Ava Rivera - Social Media Strategist" 
+               class="w-full max-w-[420px] mx-auto rounded-3xl shadow-2xl ring-1 ring-white/10 object-cover aspect-[4/4.8]">
+          
+          <!-- Floating accent elements -->
+          <div class="floating-element absolute -top-4 -right-4 bg-[#1E293B] border border-white/10 px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3 text-sm">
+            <div class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse"></div>
+            <span class="font-medium">4.9★ average client rating</span>
+          </div>
+          
+          <div class="floating-element absolute -bottom-3 -left-6 bg-[#1E293B]/90 backdrop-blur border border-white/10 px-5 py-3.5 rounded-2xl shadow-xl text-sm max-w-[210px]">
+            <div class="font-medium">"Ava turned our social into a growth engine."</div>
+            <div class="text-xs text-white/50 mt-1">— Sarah Patel, Lumen Wellness</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-12 left-1/2 hidden md:flex flex-col items-center gap-1 text-xs tracking-[2px] text-white/40">
+      <div>SCROLL TO BEGIN</div>
+      <div class="h-px w-8 bg-white/30"></div>
+    </div>
+  </header>
+
+  <!-- ============================================
+       ABOUT
+  ============================================ -->
+  <section id="about" class="section max-w-screen-2xl mx-auto px-8 pt-20 pb-24">
+    <div class="grid lg:grid-cols-12 gap-x-16 gap-y-12 items-start">
+      
+      <!-- Left: Photo + Intro -->
+      <div class="lg:col-span-5">
+        <div class="sticky top-24">
+          <div class="inline text-xs tracking-[3px] font-semibold text-violet-400 mb-3">CHAPTER 01 — THE STORY</div>
+          <h2 class="section-title tracking-tighter mb-8">I help ambitious brands<br> show up with intention.</h2>
+          
+          <div class="prose prose-invert max-w-none text-white/80 text-[15.5px] leading-relaxed">
+            <p>With over five years building social ecosystems, I combine creative storytelling with sharp strategy to deliver content that doesn't just perform — it connects.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right: Bio + Stats -->
+      <div class="lg:col-span-7">
+        <div id="about-bio" class="text-[17px] leading-relaxed text-white/90 max-w-3xl">
+          <!-- Populated by JS -->
+        </div>
+        
+        <!-- Stats -->
+        <div id="about-stats" 
+             class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES
+  ============================================ -->
+  <section id="services" class="section bg-[#111827] py-20 border-y border-white/10">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="section-header text-center">
+        <div class="inline text-xs tracking-[3px] font-semibold text-violet-400">CHAPTER 02 — WHAT I DO</div>
+        <h2 class="section-title mt-3">Strategic services tailored<br> to your growth goals.</h2>
+        <p class="mt-4 text-white/70 max-w-md mx-auto">Everything you need to build a magnetic, high-converting social presence — delivered with care and precision.</p>
+      </div>
+      
+      <div id="services-grid" 
+           class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FEATURED WORK
+  ============================================ -->
+  <section id="work" class="section max-w-screen-2xl mx-auto px-8 py-20">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-y-4 mb-12">
+      <div>
+        <div class="inline text-xs tracking-[3px] font-semibold text-violet-400">CHAPTER 03 — SELECTED WORK</div>
+        <h2 class="section-title mt-2">Real results.<br>Real brands. Real growth.</h2>
+      </div>
+      <a href="#contact" class="btn btn-secondary hidden md:inline-flex">Start a project with me →</a>
+    </div>
+    
+    <div id="projects-grid" 
+         class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <!-- Populated dynamically via JS -->
+    </div>
+    
+    <div class="text-center mt-10">
+      <p class="text-white/50 text-sm">Want to see more? <a href="#contact" class="text-white hover:text-violet-400 underline underline-offset-4">Let's talk about your brand.</a></p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TOOLS & EXPERTISE — DUAL ALTERNATING CAROUSELS
+  ============================================ -->
+  <section id="tools" class="section bg-[#111827] py-20 border-y border-white/10">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="section-header text-center mb-12">
+        <div class="inline text-xs tracking-[3px] font-semibold text-violet-400">CHAPTER 04 — THE TOOLKIT</div>
+        <h2 class="section-title mt-3">The platforms and tools<br> I use every single day.</h2>
+        <p class="mt-3 text-white/70 max-w-md mx-auto">A carefully curated stack that keeps me fast, creative, and data-informed.</p>
+      </div>
+      
+      <!-- TWO SIDE-BY-SIDE MARQUEES -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1380px] mx-auto">
+        
+        <!-- Social & Management Tools -->
+        <div id="tools-social" class="glass rounded-3xl p-8 border border-white/10">
+          <!-- JS injected marquee here -->
+        </div>
+        
+        <!-- Content Creation Tools -->
+        <div id="tools-content" class="glass rounded-3xl p-8 border border-white/10">
+          <!-- JS injected marquee here -->
+        </div>
+        
+      </div>
+      
+      <div class="text-center mt-8 text-xs text-white/50 tracking-widest">
+        CONTINUOUSLY UPDATED • PAUSE ON HOVER
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TESTIMONIALS / CLIENT STORIES
+  ============================================ -->
+  <section id="testimonials" class="section max-w-screen-2xl mx-auto px-8 py-20">
+    <div class="section-header text-center">
+      <div class="inline text-xs tracking-[3px] font-semibold text-violet-400">CHAPTER 05 — CLIENT LOVE</div>
+      <h2 class="section-title mt-3">Don't take my word for it.</h2>
+    </div>
+    
+    <div id="testimonials-grid" 
+         class="grid md:grid-cols-2 gap-6 mt-12 max-w-6xl mx-auto">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ============================================
+       FINAL CTA / CONTACT
+  ============================================ -->
+  <section id="contact" class="section bg-[#111827] border-t border-white/10 py-20">
+    <div class="max-w-3xl mx-auto px-8 text-center">
+      <div class="inline text-xs tracking-[3px] font-semibold text-violet-400">CHAPTER 06 — LET'S WORK TOGETHER</div>
+      
+      <h2 class="text-6xl md:text-7xl font-bold tracking-tighter mt-4 leading-none">Ready to build<br>something magnetic?</h2>
+      
+      <p class="mt-6 text-xl text-white/75 max-w-md mx-auto">Whether you're launching a new brand, scaling an existing one, or ready to finally own your social presence — I'm here.</p>
+      
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://calendly.com/ava-rivera/30min" target="_blank"
+           class="btn btn-primary text-lg px-10 py-4 w-full sm:w-auto">
+          Book a 30-min Discovery Call
+        </a>
+        <a href="mailto:hello@avarivera.co" 
+           class="btn btn-secondary text-lg px-9 py-4 w-full sm:w-auto">
+          Email Me Directly
+        </a>
+      </div>
+      
+      <div class="mt-16 text-sm text-white/50">
+        Currently booking for <span class="font-medium text-white/80">July – September 2026</span>
+      </div>
+    </div>
+    
+    <!-- Contact Form -->
+    <div class="max-w-xl mx-auto mt-16 px-8">
+      <form id="contact-form" class="space-y-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label class="text-xs tracking-widest text-white/60 block mb-1.5">YOUR NAME</label>
+            <input type="text" name="name" required class="form-input" placeholder="Alex Rivera">
+          </div>
+          <div>
+            <label class="text-xs tracking-widest text-white/60 block mb-1.5">BUSINESS / BRAND</label>
+            <input type="text" name="company" class="form-input" placeholder="Your Company">
+          </div>
+        </div>
+        
+        <div>
+          <label class="text-xs tracking-widest text-white/60 block mb-1.5">EMAIL ADDRESS</label>
+          <input type="email" name="email" required class="form-input" placeholder="you@yourbrand.com">
+        </div>
+        
+        <div>
+          <label class="text-xs tracking-widest text-white/60 block mb-1.5">WHAT ARE YOU WORKING ON?</label>
+          <textarea name="message" rows="5" required class="form-input resize-y min-h-[120px]" 
+                    placeholder="Tell me a bit about your brand, goals, and timeline..."></textarea>
+        </div>
+        
+        <button type="submit" 
+                class="btn btn-primary w-full py-[17px] text-base tracking-wider font-semibold">
+          SEND MESSAGE
+        </button>
+        
+        <p class="text-center text-[10px] text-white/40 pt-1">I personally read and reply to every message within 48 hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer class="border-t border-white/10 py-12 text-sm">
+    <div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row md:items-center justify-between gap-y-6 text-white/60">
+      <div>© 2026 Ava Rivera. All rights reserved.</div>
+      
+      <div class="flex flex-wrap gap-x-8 gap-y-2">
+        <a href="#" class="footer-link">Instagram</a>
+        <a href="#" class="footer-link">LinkedIn</a>
+        <a href="#" class="footer-link">TikTok</a>
+        <a href="#" class="footer-link">Client Portal</a>
+      </div>
+      
+      <div class="text-xs">Designed &amp; built with intention in California.</div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       PROJECT DETAIL MODAL
+  ============================================ -->
+  <div id="project-modal" class="hidden fixed inset-0 z-[100] items-center justify-center bg-black/90 p-4 md:p-8">
+    <div class="modal w-full max-w-5xl mx-auto bg-[#0F172A] rounded-3xl overflow-hidden shadow-2xl border border-white/10 max-h-[95dvh] overflow-y-auto">
+      <!-- Dynamic content injected by JS -->
+      <div id="modal-content"></div>
+      
+      <button id="modal-close"
+              class="absolute top-6 right-6 z-10 w-11 h-11 flex items-center justify-center rounded-2xl bg-black/60 hover:bg-black/80 text-white/90 hover:text-white transition-all">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6h12v12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FLOATING THEME CUSTOMIZER (Modularity Demo)
+  ============================================ -->
+  <div class="fixed bottom-8 right-8 z-[90]">
+    <!-- FAB -->
+    <button id="customizer-fab"
+            class="w-14 h-14 rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center shadow-xl transition-all active:scale-95 group">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white/80 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2 2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-5m-10 5v-5m10 5v-5" />
+      </svg>
+    </button>
+    
+    <!-- Customizer Panel -->
+    <div id="customizer-panel" 
+         class="hidden customizer-panel absolute bottom-20 right-0 w-80 glass border border-white/10 rounded-3xl p-7 shadow-2xl">
+      
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <div class="font-semibold tracking-tight">Live Theme Editor</div>
+          <div class="text-xs text-white/50">Instantly preview color changes</div>
+        </div>
+        <button id="close-customizer" class="text-white/40 hover:text-white text-2xl leading-none">×</button>
+      </div>
+      
+      <div class="space-y-8">
+        <!-- Primary Color -->
+        <div>
+          <div class="flex items-center justify-between text-xs tracking-widest mb-3 text-white/60">
+            <div>PRIMARY ACCENT</div>
+            <div class="font-mono text-[10px] text-white/40">VIOLET</div>
+          </div>
+          <div class="flex gap-3 flex-wrap">
+            <div class="color-option color-swatch active" data-type="primary" data-color="#7C3AED" style="background:#7C3AED"></div>
+            <div class="color-option color-swatch" data-type="primary" data-color="#6366F1" style="background:#6366F1"></div>
+            <div class="color-option color-swatch" data-type="primary" data-color="#8B5CF6" style="background:#8B5CF6"></div>
+            <div class="color-option color-swatch" data-type="primary" data-color="#A855F7" style="background:#A855F7"></div>
+          </div>
+        </div>
+        
+        <!-- Accent Color -->
+        <div>
+          <div class="flex items-center justify-between text-xs tracking-widest mb-3 text-white/60">
+            <div>SECONDARY ACCENT</div>
+            <div class="font-mono text-[10px] text-white/40">PINK</div>
+          </div>
+          <div class="flex gap-3 flex-wrap">
+            <div class="color-option color-swatch active" data-type="accent" data-color="#EC4899" style="background:#EC4899"></div>
+            <div class="color-option color-swatch" data-type="accent" data-color="#F472B6" style="background:#F472B6"></div>
+            <div class="color-option color-swatch" data-type="accent" data-color="#FB7185" style="background:#FB7185"></div>
+            <div class="color-option color-swatch" data-type="accent" data-color="#F43F5E" style="background:#F43F5E"></div>
+          </div>
+        </div>
+      </div>
+      
+      <button id="reset-colors"
+              class="mt-8 w-full py-3 text-xs tracking-widest border border-white/20 hover:bg-white/5 transition-colors rounded-2xl font-medium">
+        RESET TO DEFAULT THEME
+      </button>
+      
+      <div class="mt-6 text-[10px] text-center text-white/40 leading-tight">
+        These changes are live only.<br>
+        Edit <span class="font-mono text-white/60">:root</span> in <span class="font-mono text-white/60">css/styles.css</span> to save permanently.
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SCRIPTS
+  ============================================ -->
+  <!-- Data (must load first) -->
+  <script src="js/data.js"></script>
+  
+  <!-- Main App Logic -->
+  <script src="js/app.js"></script>
+  
+  <!-- Optional: Easter egg console message -->
+  <script>
+    console.log('%c[Portfolio] Ava Rivera VA site initialized. All modular files loaded successfully. Edit js/data.js + css/styles.css to customize.', 'color:#64748b; font-size:9px');
+  </script>
+</body>
+</html>
