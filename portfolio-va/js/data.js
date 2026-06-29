@@ -29,11 +29,8 @@ const portfolioData = {
   // About Section
   about: {
     bio: `I'm a strategic content creator and social media operator with over 5 years of experience helping brands and creators grow meaningfully online. 
-
 I specialize in turning complex ideas into scroll-stopping visuals, high-converting captions, and data-backed strategies — particularly on Instagram, TikTok, and LinkedIn.
-
 Before going independent, I led social for a fast-growing DTC wellness brand where we scaled from 8k to 120k+ followers and consistently hit 8-figure revenue months through organic + paid content systems.
-
 My approach is equal parts creative intuition and analytical rigor. I don't just post pretty pictures — I build content engines that drive real business results.`,
     stats: [
       { number: "52", label: "Clients Served", suffix: "+" },

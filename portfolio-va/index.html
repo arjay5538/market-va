@@ -3,30 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ava Rivera • Social Media Strategist &amp; Content Creation VA</title>
+  <title>Rosen Joy F. Fortit • Social Media Strategist &amp; Content Creation VA</title>
   <meta name="description" content="Strategic social media management and scroll-stopping content creation for founders, creators, and purpose-driven brands.">
   
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
+   <!-- Tailwind Configuration -->
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif']
+      }
+    }
+  }
+};
+</script>
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
   
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
   
-  <style>
-    /* Tailwind script configuration for nice defaults */
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            'sans': ['Inter', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    };
-  </style>
+
 </head>
 <body class="bg-[#0F172A] text-white antialiased selection:bg-violet-500/30">
 
@@ -37,11 +37,11 @@
     <div class="max-w-screen-2xl mx-auto px-8 flex items-center justify-between h-20">
       <!-- Logo -->
       <div class="flex items-center gap-x-3">
-        <div class="w-9 h-9 rounded-2xl bg-gradient-to-br from-violet-600 to-pink-500 flex items-center justify-center">
-          <span class="font-bold text-white text-2xl tracking-tighter">AR</span>
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-violet-600 to-pink-500 flex items-center justify-center">
+          <span class="font-bold text-white text-2xl tracking-tighter">RJ</span>
         </div>
         <div>
-          <div class="font-semibold tracking-tighter text-xl">Ava Rivera</div>
+          <div class="font-semibold tracking-tighter text-xl">Rosen Joy F. Fortit</div>
           <div class="text-[10px] text-white/50 -mt-1">SOCIAL • CONTENT</div>
         </div>
       </div>
@@ -423,7 +423,7 @@
         
         <!-- Accent Color -->
         <div>
-          <div class="flex items-center justify-between text-xs tracking-widest mb-3 text-white/60">
+          <div class="flex items-center justify-center text-xs tracking-widest mb-3 text-white/60">
             <div>SECONDARY ACCENT</div>
             <div class="font-mono text-[10px] text-white/40">PINK</div>
           </div>
@@ -437,14 +437,9 @@
       </div>
       
       <button id="reset-colors"
-              class="mt-8 w-full py-3 text-xs tracking-widest border border-white/20 hover:bg-white/5 transition-colors rounded-2xl font-medium">
-        RESET TO DEFAULT THEME
+              class="px-5 py-1.5 border border-white/20 rounded-xl text-xs tracking-widest hover:bg-white/5 transition">
+        RESET COLORS
       </button>
-      
-      <div class="mt-6 text-[10px] text-center text-white/40 leading-tight">
-        These changes are live only.<br>
-        Edit <span class="font-mono text-white/60">:root</span> in <span class="font-mono text-white/60">css/styles.css</span> to save permanently.
-      </div>
     </div>
   </div>
 
