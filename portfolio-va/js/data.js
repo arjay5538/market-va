@@ -5,7 +5,7 @@
 const portfolioData = {
   // Personal Info - Change name, titles, contact here
   personal: {
-    name: "Ava Rivera",
+    name: "Rosen Joy F. Fortit",
     title: "Social Media Strategist & Content Creation VA",
     tagline: "I craft magnetic social media presences and scroll-stopping content that turns followers into loyal communities.",
     shortBio: "Helping founders, creators, and purpose-driven brands build authentic, high-performing social media ecosystems.",
